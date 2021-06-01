@@ -2,8 +2,11 @@ package com.test;
 
 public class Generics {
     public static void main(String[] args) {
-        Info<String> i = new Info<>("Hello");
-        System.out.println(i);
+        Info<String> stringInfo = new Info<>("Hello");
+        System.out.println(stringInfo);
+
+        Info<Integer> integerInfo = new Info<>(100); //можно также использовать другие типы, как Integer например
+        System.out.println(integerInfo);
     }
 }
 
