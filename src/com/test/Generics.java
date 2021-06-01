@@ -8,10 +8,10 @@ public class Generics {
 }
 
 class Info<T> { //здесь вместо T можно писать любую букву, слово. Т означает, что в дальнейшем будем использовать какой-то определенный тип, String, Integer и т.д.
-    private T value;
+    private T value;//здесь будет заменено на String value
     Info(T value){
         this.value=value;
-    }
+    }//и здесь тоже на String value
     public String toString(){
         return "(( " + value + " ))";
     }
